@@ -1,5 +1,5 @@
 <?php
-namespace Xiaosongshu\ColorWord;
+namespace Xiaosongshu\Colorword;
 class Transfer
 {
 

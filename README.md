@@ -9,7 +9,7 @@ composer require xiaosongshu/colorword
 #### 使用
 创建index.php，内容如下：
 ```php 
-use Xiaosongshu\ColorWord\Transfer;
+use Xiaosongshu\Colorword\Transfer;
 /** 实例化字体颜色转化类 */
 $transfer = new Transfer();
 /** 输入需要转换颜色的文字内容，设置文字颜色，设置背景色 */
