@@ -2,6 +2,9 @@
 
 namespace Xiaosongshu\Colorword;
 
+/**
+ * @purpose php在cli模式下输出彩色字体
+ */
 class Transfer{
 
     /** 字体颜色 */
@@ -10,6 +13,9 @@ class Transfer{
     /** 背景色 */
     private $background_colors = [];
 
+    /**
+     * 初始化
+     */
     public function __construct()
     {
         /** 字体颜色 30-39*/
@@ -66,6 +72,33 @@ class Transfer{
 
         $colored_string .= $string . "\033[0m";//0m设置项用于恢复默认值
         return $colored_string;
+    }
+
+    /**
+     * 提示信息
+     * @param string $string 文字内容
+     * @return string 返回值
+     */
+    public function info(string $string){
+        return $this->getColorString($string,'green');
+    }
+
+    /**
+     * 错误提示
+     * @param string $string
+     * @return string
+     */
+    public function error(string $string){
+        return $this->getColorString($string,'white','red');
+    }
+
+    /**
+     * 普通消息
+     * @param string $string
+     * @return string
+     */
+    public function line(string $string){
+        return $this->getColorString($string,'white');
     }
 
 }
