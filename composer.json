@@ -1,6 +1,6 @@
 {
     "name": "xiaosongshu/colorword",
-    "description": "\"PHP在cli模式输出彩色字体\"",
+    "description": "PHP在cli模式输出彩色字体",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -8,13 +8,13 @@
             "Xiaosongshu\\Colorword\\": "src/"
         }
     },
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "xiaosongshu",
             "email": "2723659854@qq.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=7.0"
     }

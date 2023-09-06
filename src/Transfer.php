@@ -1,7 +1,8 @@
 <?php
+
 namespace Xiaosongshu\Colorword;
-class Transfer
-{
+
+class Transfer{
 
     /** 字体颜色 */
     private $foreground_colors = [];
